@@ -1,0 +1,60 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.form-group-btn{
+  float: left;
+  width: 100%;
+  text-align: center;
+  }
+  .page-container {
+    background: #e5e5e5 !important;
+    padding-left: 234px !important;
+    height: 999px !important;
+    margin-top: 27px;
+  }
+  a {
+    color: rgb(150,100,-86) !important;
+    text-decoration: none ;
+    background-color: transparent ;
+  }
+.au-card{
+  background: rgb(192, 95, 248) !important;
+}
+
+.btn-outline-success {
+  border: white !important;
+  background-color: white !important;
+  background-image: none !important;
+  border-color: white !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-style: italic;
+  text-align: auto;
+
+}
+
+.PDFButton{
+  cursor: pointer;
+  padding: 10px;
+  background-color: green;
+}
+
+
+.page-content--bge5 {
+  background: #e5e5e5;
+  height: 200vh !important;
+  background-color: rgb(108, 108, 185) !important;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 130px !important;
+}

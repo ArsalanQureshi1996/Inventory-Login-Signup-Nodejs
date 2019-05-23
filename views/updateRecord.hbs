@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="stylesheets/css/font-face.css" rel="stylesheet" media="all">
+    <link href="stylesheets/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="stylesheets/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="stylesheets/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="stylesheets/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="stylesheets/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="stylesheets/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="stylesheets/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="stylesheets/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="stylesheets/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="stylesheets/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="stylesheets/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="stylesheets/css/theme.css" rel="stylesheet" media="all">
+
+    <style>
+        .card {
+    margin-top: 27px !important;
+}
+    </style>
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/icon/logo.png" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                     <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="/dashboard">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="/addRecord">
+                                <i class="fas fa-plus"></i>Add Record</a>
+                        </li>
+                        <li>
+                            <a href="/viewRecord">
+                                <i class="fas fa-eye"></i>View Record</a>
+                        </li>
+                        <li>
+                            <a href="/deleteRecord">
+                                <i class="fas fa-trash"></i>Delete Record</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for datas &amp; reports..." />
+                                <button class="au-btn--submit" type="submit">
+                                    <i class="zmdi zmdi-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP END-->
+
+            <!-- MAIN CONTENT-->
+                        <form method="POST">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong>UPDATE RECORD</strong>
+                                    </div>
+                                    <div class="card-body card-block">
+                                        <div class="form-group">
+                                            <label for="company" class=" form-control-label">Item Name</label>
+                                            <input type="text" id="itemName" name="itemName" placeholder="Enter Item name" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="company" class=" form-control-label">Purchase Price</label>
+                                            <input type="number" id="purchasePrice" name="purchasePrice" placeholder="Enter Purchase Price" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="vat" class=" form-control-label">Sale Price</label>
+                                            <input type="number" id="salePrice" name="salePrice" placeholder="Enter Sale Price" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="street" class=" form-control-label">In Stock</label>
+                                            <input type="number" id="inStock" name="inStock" placeholder="Enter In Stock Quantity" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="street" class=" form-control-label">Product Category</label>
+                                            <input type="text" id="productCategory" name="productCategory" placeholder="Enter Product Category" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="street" class=" form-control-label">Brand Name</label>
+                                            <input type="text" id="brandName" name="brandName" placeholder="Enter Brand Name" class="form-control" required/>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="submit" class="btn btn-primary btn-sm">
+                                               <i class="fa fa-dot-circle-o"></i> UPDATE
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </form>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="stylesheets/vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="stylesheets/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="stylesheets/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="stylesheets/vendor/slick/slick.min.js">
+    </script>
+    <script src="stylesheets/vendor/wow/wow.min.js"></script>
+    <script src="stylesheets/vendor/animsition/animsition.min.js"></script>
+    <script src="stylesheets/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="stylesheets/vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="stylesheets/vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="stylesheets/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="stylesheets/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="stylesheets/vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="stylesheets/vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="javascripts/js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
